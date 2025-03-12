@@ -119,8 +119,8 @@ p {
 /* Hero Section */
 .hero-section {
   position: relative;
-  //height: 100vh;
-  aspect-ratio: 16/9;
+  width: 100%;
+  aspect-ratio: 16/7.5;
   display: flex;
   align-items: flex-end;
   justify-content: center;
