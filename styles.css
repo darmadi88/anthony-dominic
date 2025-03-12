@@ -8,6 +8,7 @@
   --text-white: #ffffff;
   --background-light: #f8fafc;
   --background-white: #ffffff;
+  --background-grey: #747a80;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -128,7 +129,7 @@ p {
 }
 .hero-section h1 {
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .hero-section .subtitle {
   font-size: 1.5rem;
@@ -141,13 +142,15 @@ p {
   position: absolute;
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hero-section .hero-container {
   width: 100%;
-  padding: 3rem 1rem 1rem;
+  padding: 3rem 1rem 2rem;
   z-index: 100;
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0) 100%);
 }
 
 .cta-button {
@@ -220,20 +223,17 @@ p {
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
+  gap: 0 2rem;
 }
 
 .achievement-card {
-  background-color: var(--background-white);
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
+  padding: 2rem 0 1rem;
   transition: var(--transition);
+  border-top: 1px solid var(--text-light);
 }
 
-.achievement-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-hover);
+.achievement-card:last-child {
+  border-bottom: 1px solid var(--text-light);
 }
 
 .achievement-icon {
@@ -343,23 +343,19 @@ p {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem;
 }
 
 .gallery-item {
-  background-color: var(--background-white);
-  border-radius: var(--border-radius);
   overflow: hidden;
-  box-shadow: var(--shadow);
   transition: var(--transition);
 }
 
 .gallery-item:hover {
   transform: translateY(-5px);
-  box-shadow: var(--shadow-hover);
 }
 
 .gallery-image {
+  box-shadow: var(--shadow);
   position: relative;
   height: 16rem;
   overflow: hidden;
@@ -368,8 +364,8 @@ p {
 .gallery-image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   transition: transform 0.5s ease;
 }
 
@@ -419,7 +415,7 @@ p {
 /* Responsive Styles */
 @media (min-width: 640px) {
   .achievements-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -433,12 +429,12 @@ p {
     flex-direction: row;
   }
   .video-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
   .achievements-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
