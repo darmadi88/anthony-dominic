@@ -235,7 +235,7 @@ p {
 .achievement-card h3 {
   text-transform: capitalize;
 }
-.achievement-card :last-child {
+.achievement-card:last-child {
   border-bottom: 1px solid var(--text-light);
 }
 
