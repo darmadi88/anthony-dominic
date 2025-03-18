@@ -243,10 +243,14 @@ p {
   padding: 2rem 0 1rem;
   transition: var(--transition);
   border-top: 1px solid var(--text-light);
-}
 
-.achievement-card:last-child {
-  border-bottom: 1px solid var(--text-light);
+  h3 {
+    text-transform: capitalize;
+  }
+
+  :last-child {
+    border-bottom: 1px solid var(--text-light);
+  }
 }
 
 // .achievement-card:hover {
