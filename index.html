@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anthony Dominic | Personal Resume</title>
+    <title>Anthony Dominic | Personal Profile</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,15 +11,39 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet">
   </head>
   <body>
     <main>
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="container">
+          <a href="#hero" class="logo">Anthony Dominic - Grade 9</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#achievements" class="nav-link">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a href="#videos" class="nav-link">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <!-- Hero Section -->
-      <section class="hero-section">
-        <img class="hero-image" src="./assets/anthony-3.jpg" alt="" />
+      <section class="hero-section" id="hero">
+        <img class="hero-image" src="./assets/images/anthony-3.jpg" alt="" />
         <div class="hero-container text-center">
           <h1>Anthony Dominic</h1>
-          <p class="subtitle">Passionate Soccer Enthusiast</p>
+          <p class="subtitle">Diehard Soccer Player</p>
         </div>
       </section>
 
@@ -29,17 +53,14 @@
           <h2 class="section-title">About Me</h2>
           <div class="about-content">
             <div class="profile-image">
-              <img src="./assets/profile.jpg" alt="Profile picture" />
+              <img src="./assets/images/profile.jpg" alt="Profile picture" />
             </div>
             <div class="about-text">
               <p>
-                Hello! I'm Anthony Dominic Hayhurst, a passionate soccer player. I am a dedicated student with a strong background in soccer. I have played competitively for several years, showcasing my skills on and off the field.
+                Hi! I'm Anthony Dominic Hayhurst, I'm 14 years old, a 9th grader, and I'm super into soccer! I'm a good student who's been playing soccer for like forever. I've been on competitive teams for a few years now and I'm pretty good, NGL. I work super hard at school and soccer because I wanna get better at both. Soccer is literally my life!
               </p>
               <p>
-                With a commitment to excellence, I aim to further my education while pursuing my passion for the sport.
-              </p>
-              <p>
-                Throughout my soccer journey, I have earned numerous awards and recognitions, showcasing my dedication and skill on the field. These reflect my commitment to excellence and my passion for the game.
+                I've won some cool awards and stuff for soccer, which is awesome because I practice ALL THE TIME. My coach says I have "natural talent" but honestly I just love the game so much. Can't wait for the next season to start! ⚽🔥
               </p>
             </div>
           </div>
@@ -47,7 +68,7 @@
       </section>
 
       <!-- Achievements Section -->
-      <section class="achievements-section">
+      <section class="achievements-section" id="achievements">
         <div class="container">
           <h2 class="section-title">Achievements</h2>
           <div class="achievements-grid">
@@ -77,21 +98,13 @@
               <div class="achievement-card">
                 <h3>3rd place barati cup</h3>
               </div>
-  
-              <!-- <div class="achievement-card">
-                <h3>Lead Developer</h3>
-                <p>
-                  Led a team of 10 developers to successfully launch an e-commerce
-                  platform with 1M+ users.
-                </p>
-              </div> -->
             </div>
           </div>
         </div>
       </section>
 
       <!-- Video Section -->
-      <section class="video-section">
+      <section class="video-section" id="videos">
         <div class="container">
           <h2 class="section-title">Featured Videos</h2>
           <div class="video-grid">
@@ -146,15 +159,62 @@
         </div>
       </section>
 
+      <!-- Other Interest -->
+       <section class="other-interest-section" id="other-interest">
+        <div class="container">
+          <h2 class="section-title">Other Interests</h2>
+          <div class="other-interest-grid">
+            <div class="other-interest-item">
+              <div class="other-interest-image">
+                <Video
+                  src="./assets/videos/anthony-skate-vid.mp4" controls></Video>
+              </div>
+              <div class="other-interest-description">
+                <h3>Skating</h3>
+                <p>
+                  I used to skate a lot when I was younger, until I found soccer.
+                </p>
+              </div>
+            </div>
+            <div class="other-interest-item">
+              <div class="other-interest-image">
+                <img
+                  src="./assets/images/cooking.jpg"
+                />
+              </div>
+              <div class="other-interest-description">
+                <h3>Cooking</h3>
+                <p>
+                  I love to cook my own meals, in order to stay healthy and fit.
+                </p>
+              </div>
+            </div>
+            <div class="other-interest-item">
+              <div class="other-interest-image">
+                <img
+                  src="./assets/images/cats.jpg"
+                />
+              </div>
+              <div class="other-interest-description">
+                <h3>Cats</h3>
+                <p>
+                  I love animals especially cats!! Meet Smokey and Molly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
       <!-- Gallery Section -->
-      <section class="gallery-section">
+      <section class="gallery-section" id="gallery">
         <div class="container">
           <h2 class="section-title">Gallery</h2>
           <div class="gallery-grid">
             <div class="gallery-item">
               <div class="gallery-image">
                 <img
-                  src="./assets/tim-tays-baker-barati-u13.jpg"
+                  src="./assets/images/tim-tays-baker-barati-u13.jpg"
                 />
               </div>
             </div>
@@ -162,7 +222,7 @@
             <div class="gallery-item">
               <div class="gallery-image">
                 <img
-                  src="./assets/gothia cup.jpg"
+                  src="./assets/images/gothia cup.jpg"
                 />
               </div>
             </div>
@@ -170,7 +230,7 @@
             <div class="gallery-item">
               <div class="gallery-image">
                 <img
-                  src="./assets/anthony-1.jpg"
+                  src="./assets/images/anthony-1.jpg"
                 />
               </div>
             </div>
@@ -178,7 +238,7 @@
             <div class="gallery-item">
               <div class="gallery-image">
                 <img
-                  src="./assets/anthony-2.jpg"
+                  src="./assets/images/anthony-2.jpg"
                 />
               </div>
             </div>
@@ -186,7 +246,7 @@
             <div class="gallery-item">
               <div class="gallery-image">
                 <img
-                  src="./assets/anthony-3.jpg"
+                  src="./assets/images/anthony-3.jpg"
                 />
               </div>
             </div>
@@ -194,31 +254,64 @@
             <div class="gallery-item">
               <div class="gallery-image">
                 <img
-                  src="./assets/anthony-6.jpg"
+                  src="./assets/images/anthony-6.jpg"
                 />
               </div>
             </div>
             <div class="gallery-item">
               <div class="gallery-image">
                 <img
-                  src="./assets/anthony-4.jpg"
+                  src="./assets/images/anthony-4.jpg"
                 />
               </div>
             </div>
             <div class="gallery-item">
               <div class="gallery-image">
                 <img
-                  src="./assets/anthony-7.jpg"
+                  src="./assets/images/anthony-7.jpg"
                 />
               </div>
             </div>
             <div class="gallery-item">
               <div class="gallery-image">
                 <img
-                  src="./assets/anthony-8.jpg"
+                  src="./assets/images/anthony-8.jpg"
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact Me</h2>
+          <div class="contact-content">
+            <p>If you'd like to get in touch, feel free to reach me out via email or follow me on Instagram!</p>
+            <ul class="contact-info">
+              <li>
+                <a href="mailto:anthonydominic620@gmail.com">
+                  <i class="lni lni-envelope-1"></i> 
+                  anthonydominic620@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/anth0n777" target="_blank">
+                  <i class="lni lni-instagram"></i>
+                  @anth0n777
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="container">
+          <div class="footer-content">
+            <p>
+              &copy; 2023 Anthony Dominic. All rights reserved.
+            </p>
           </div>
         </div>
       </section>
