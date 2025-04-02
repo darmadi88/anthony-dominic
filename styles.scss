@@ -349,10 +349,15 @@ p {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .video-item {
   transition: var(--transition);
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .video-thumbnail {
